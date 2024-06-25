@@ -53,6 +53,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--  feign客户端公共项目  -->
         <dependency>
             <groupId>com.cq</groupId>
             <artifactId>as-feign-api</artifactId>

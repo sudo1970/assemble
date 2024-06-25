@@ -28,7 +28,7 @@ spring:
         - id: as-user
           uri: lb://as-user
           predicates:
-            - Path=/as-user/**
+            - Path=/user/**
           filters:
             - StripPrefix=1 #StripPrefix=1 表示去除请求路径的第一个路径片段（即前缀路径）
 secure:
