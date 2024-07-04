@@ -16,6 +16,7 @@
         <module>as-marketing-center</module>
         <module>as-user</module>
         <module>as-task-order</module>
+        <module>as-scheduler-server</module>
     </modules>
     <dependencies>
         <dependency>

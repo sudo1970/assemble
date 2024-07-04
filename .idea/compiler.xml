@@ -12,11 +12,13 @@
         <module name="asgateway" />
         <module name="asmarketingcenter" />
         <module name="aseureka" />
+        <module name="asschedulerserver" />
         <module name="astaskorder" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="asfeignapi" target="1.8" />
+      <module name="asschedulerservice" target="1.8" />
       <module name="commons" target="1.8" />
     </bytecodeTargetLevel>
   </component>

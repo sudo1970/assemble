@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/as-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/as-marketing-center" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/as-oauth2-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/as-scheduler-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/as-scheduler-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/as-task-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/as-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commons" charset="UTF-8" />
