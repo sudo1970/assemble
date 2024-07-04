@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="asuser" />
-        <module name="asfeignapi" />
         <module name="asoauth2server" />
         <module name="asgateway" />
         <module name="asmarketingcenter" />
@@ -17,6 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="asfeignapi" target="1.8" />
       <module name="commons" target="1.8" />
     </bytecodeTargetLevel>
   </component>

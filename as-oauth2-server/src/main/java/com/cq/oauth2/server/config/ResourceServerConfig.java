@@ -21,12 +21,17 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         // 配置放行的资源
-        http.authorizeRequests()
-                .anyRequest()
-                .authenticated()
-                .and()
-                .requestMatchers()
-                .antMatchers("/user/**");
+//        http.authorizeRequests()
+//                .anyRequest()
+//                .authenticated()
+//                .and()
+//                .requestMatchers()
+//                .antMatchers("**/marketingCenter/**");
+
+        http.requestMatchers().antMatchers("/**")
+                .and().authorizeRequests()
+                .antMatchers("/**").permitAll()
+                .anyRequest().authenticated();
     }
 
     @Override

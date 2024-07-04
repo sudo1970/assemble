@@ -13,7 +13,6 @@
         <module>commons</module>
         <module>as-gateway</module>
         <module>as-oauth2-server</module>
-        <module>as-feign-api</module>
         <module>as-marketing-center</module>
         <module>as-user</module>
         <module>as-task-order</module>

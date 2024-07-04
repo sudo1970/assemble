@@ -1,6 +1,6 @@
 package com.cq.marketing.center;
 
-import com.cq.feign.client.UserClient;
+import com.cq.marketing.center.feignClient.UserClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;

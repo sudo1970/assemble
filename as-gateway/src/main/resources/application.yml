@@ -21,7 +21,7 @@ spring:
         - id: as-marketing-center
           uri: lb://as-marketing-center
           predicates:
-            - Path=/as-marketing-center/**
+            - Path=/marketingCenter/**
           filters:
             - StripPrefix=1 #StripPrefix=1 表示去除请求路径的第一个路径片段（即前缀路径）
 
@@ -36,6 +36,9 @@ secure:
     urls: # 配置白名单路径
       - /actuator/**
       - /auth/oauth/**
+      - /**/user/**
+      - /user/**
+      - /**/marketingCenter/**
 
 # 配置 Eureka Server 注册中心
 eureka:
