@@ -3,8 +3,7 @@
  架构模块
  1、commons （常量 + 共用model + 统一异常处理）
  2、as-gateway （网关）
- 3、as-feign-api （feign相关客户端代码）
- 4、as-eureka (注册中心)
+ 3、as-eureka (注册中心)
 
  业务模块
  1、用户中心模块（as-user）

@@ -1,10 +1,12 @@
 package com.cq.scheduler.server.service;
 
+import com.cq.scheduler.server.mapper.ProductMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBloomFilter;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Slf4j
 @Component
@@ -15,10 +17,17 @@ public class BloomFilterService {
     @Resource
     private RBloomFilter bloomFilter;
 
+    @Resource
+    private ProductMapper productMapper;
+
     public void sysDBAndBloomFilter () {
         log.info("=======sysDBAndBloomFilter=========");
         //初始化布隆过滤器大小与容错率
         bloomFilter.tryInit(EXPECTED_INSERTIONS,FPR);
-//        bloomFilter.add("111");
+        List<String> list = productMapper.selectAllProductId();
+        log.info("list:::{}", list.size());
+        log.info("bloomFilter.getSize before:::{}", bloomFilter.getSize());
+        bloomFilter.add(list);
+        log.info("bloomFilter.getSize after:::{}", bloomFilter.getSize());
     }
 }
