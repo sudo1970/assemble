@@ -1,4 +1,5 @@
 com\cq\commons\contant\ApiConstant.class
+com\cq\commons\vo\ShortAccountManagerInfo.class
 com\cq\commons\domain\SignInIdentity.class
 com\cq\commons\pojo\AccountManager.class
 com\cq\commons\utils\ResultInfoUtil.class
@@ -6,5 +7,6 @@ com\cq\commons\contant\RedisKeyConstant.class
 com\cq\commons\model\base\BaseModel.class
 com\cq\commons\model\domain\ResultInfo.class
 com\cq\commons\domain\ResultInfo.class
+com\cq\commons\dto\AccountManagerDTO.class
 com\cq\commons\exception\ParameterException.class
 com\cq\commons\utils\AssertUtil.class

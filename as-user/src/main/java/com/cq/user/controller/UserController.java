@@ -1,12 +1,11 @@
 package com.cq.user.controller;
 
 
+import com.cq.commons.dto.AccountManagerDTO;
 import com.cq.commons.model.domain.ResultInfo;
 import com.cq.user.service.UserService;
 import io.swagger.annotations.Api;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -33,7 +32,16 @@ public class UserController {
     public ResultInfo signIn(String account, String password) {
         return userService.signIn(account, password, request.getServletPath());
     }
-
+    /**
+     * 注册
+     *
+     * @param dinersDTO
+     * @return
+     */
+    @PostMapping("register")
+    public ResultInfo register(@RequestBody AccountManagerDTO dinersDTO) {
+        return userService.register(dinersDTO, request.getServletPath());
+    }
     @GetMapping("hello")
     public String hello() {
         return "hello user!";
