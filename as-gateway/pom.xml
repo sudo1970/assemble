@@ -19,9 +19,15 @@
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-webflux</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starer-web</artifactId>
                 </exclusion>
             </exclusions>
+
+
         </dependency>
         <!-- eureka client -->
         <dependency>
